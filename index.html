@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="shortcut icon" href="/encriptador-challenge-one/assets/pictures/bloqueado.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@800&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Encriptador - ONE</title>
+</head>
+<body>
+
+    <main class="app">
+        <section class="card">
+            <figure class="logo-alura">
+                <img src="/encriptador-challenge-one/assets/pictures/logo.png" alt="">
+            </figure>
+            
+            <article class="card-fundamentals">
+                <div class="text-container">
+                    <textarea oninput="validarInput(this)" placeholder="Ingrese el texto Aquí" class="text-container__ta"></textarea>
+                </div>
+                
+                <span class="advertencia-text">
+                    <img src="/encriptador-challenge-one/assets/pictures/bi_exclamation-circle-fill.png" alt=""> 
+                    Sólo letras minúsculas y sin acentos
+                </span>
+                
+                <div class="botones">
+                    <button class="btn-encriptar"><i class='bx bxs-lock bx-sm'></i>Encriptar</button>
+                    <button class="btn-desencriptar"><i class='bx bxs-lock-open bx-sm'></i>Desencriptar</button>
+                </div>
+            </article>
+            
+        </section>
+        
+        
+        <aside class="mensajes-container">
+            <div class="mensaje-error">
+                <img class="mensaje-error__img" src="/encriptador-challenge-one/assets/pictures/muneco.png">
+                <h3>Ningún mensaje fue encontrado</h3>
+                <p>Ingresa el texto que desees encriptar o desencriptar</p>
+            </div>
+    
+            <div class="mensaje-encriptado">
+                <p class="mensaje-encriptado__p"></p>
+                <button class="btn-copiar"><i class='bx bx-copy-alt bx-sm'></i>Copiar</button>
+            </div>
+        </aside>
+    </main>    
+
+    <footer class="footer-dev">Jack Manuel Alvites Mejía - Grupo 6 ONE</footer>
+
+    <script src="assets/js/app.js"></script>
+</body>
+</html>

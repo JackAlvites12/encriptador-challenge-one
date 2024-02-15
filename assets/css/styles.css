@@ -1,0 +1,256 @@
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Mukta', sans-serif;
+    background:rgba(243, 245, 252, 1);
+    display: flex;
+    flex-direction: column;
+    min-width: 361px;
+    min-height: 100vh;
+    font-weight: 700;
+  }
+
+  .app{
+    padding: 15px;
+  }
+
+  .container{
+    margin: 0 auto;
+    /* min-width: 320px; */
+    width: 90%;
+    height: 100vh;
+  }
+  
+  .logo-alura{
+    position: relative;
+    top: 5px;
+    height: 50px;
+  }
+  
+  .logo-alura img{
+    width: 40px;
+    height: 50px;
+    object-fit: none;
+  }
+  
+  .text-container{
+    text-align: center;
+    margin-top: 40px; 
+    height: 180px; 
+  }
+  
+  .text-container__ta::placeholder {
+    color: rgba(10, 56, 113, 1);
+  }
+  
+  .text-container__input:focus{
+    outline-style: none;
+  }
+  
+  .text-container__ta{
+    font-family: 'Mukta', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    width: 100%;
+    height: 90%;
+    background:rgba(243, 245, 252, 1);
+    border-style: none;
+    resize: none;
+    color: rgba(10, 56, 113, 1);
+
+  }
+  
+  .text-container__ta:focus{
+    color: rgba(10, 56, 113, 1);
+    outline-style: none;
+  }
+  
+  .advertencia-text{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 12px;
+    color: rgba(73, 80, 87, 1);
+  }
+  
+  
+  .botones{
+    margin: 20px 0px;
+    display: flex;    
+    flex-direction: column;
+    gap: 20px;
+    
+  }
+  
+  .btn-encriptar, .btn-desencriptar, .btn-copiar{
+    display: flex;
+    align-items: center; /* modificar */
+    justify-content: center;
+    gap: 10px;
+    cursor: pointer;
+    font-family: 'Mukta', sans-serif;
+    font-size: 1em;
+    border-radius: 18px;
+    padding: 18px;
+    border-style: none;
+  }
+  
+  .btn-encriptar{
+    color: #fff;
+    background: rgba(10, 56, 113, 1);
+  }
+  
+  .btn-desencriptar{
+    color: rgba(10, 56, 113, 1);
+    border: 1px solid rgba(10, 56, 113, 1);
+  }
+  
+  
+  .mensaje-error{
+    display: none;
+    text-align: center;
+    border-radius: 32px;
+    padding: 8px; 
+    background: rgba(255, 255, 255, 1);
+    box-shadow: 0px 24px 32px 0px rgba(0, 0, 0, 0.18);
+  }
+
+  .mensaje-error h3{
+    margin: 12px;
+    line-height: 1;
+    font-size: 25px;
+    font-weight: 800;
+    color: rgba(52, 58, 64, 1);
+
+  }
+
+  .mensaje-error p{
+    margin: 12px;
+    font-size: 16px;
+    color: rgba(73, 80, 87, 1);
+
+  }
+
+  .mensaje-encriptado{
+    display: none;
+    text-align: center;
+    border-radius: 32px;
+    padding: 28px;
+    background: rgba(255, 255, 255, 1);
+    box-shadow: 0px 24px 32px 0px rgba(0, 0, 0, 0.18);
+  }
+
+  .mensaje-encriptado__p{
+    position: relative;
+    bottom: 12px;
+    height: auto; 
+    word-wrap: break-word; 
+  }
+
+  .btn-copiar{
+    width: 100%;
+    color: rgba(10, 56, 113, 1);
+    border: 1px solid rgba(10, 56, 113, 1);
+  }
+
+  .show{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 100%;
+  }
+
+  .mensaje-error__img{
+    display: none;
+  }
+
+  .footer-dev{
+    color: #fff;
+    background: #000;
+    text-align: center;
+    margin-top: auto;
+    padding: 15px;
+  }
+  /* Tablet responsive */
+
+@media(width > 719px){
+
+    .botones{
+      margin: 20px 0px;
+      flex-direction: row;
+    }
+
+    .btn-encriptar, .btn-desencriptar{
+      flex-grow: 1;
+    }
+
+    .text-container{
+      height: 40vh;
+    }
+
+    .text-container__ta{
+      height: 100%;
+    }
+
+    .advertencia-text{
+      margin-top: 20px;
+    }
+}
+
+/* ESCRITORIO */
+
+@media(width > 1368px){
+
+  .app{
+    height: 80vh;
+    display: flex;
+  }
+
+  .card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-basis: 80%;
+  }
+
+  .card-fundamentals{
+    width: 80%;
+  }
+
+  .logo-alura{
+    align-self: start;
+  }
+
+  .mensajes-container{
+    padding-left: 25px;
+  }
+
+  .mensaje-error{
+    width: 350px;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+  }
+  
+  .mensaje-error__img{
+    display: block;
+  }
+
+  .mensaje-encriptado{
+    position: relative;
+    width: 350px;
+    height: 100%;
+    overflow: auto;
+  }
+
+}
+
+
+
+
+
+  
